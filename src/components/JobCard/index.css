@@ -1,0 +1,92 @@
+.each-job-item {
+  border-radius: 10px;
+  background-color: #272727;
+  padding: 15px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.job-logo-container {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.comapny-logo {
+  height: 50px;
+  margin: 0px;
+}
+
+.job-name-rating-container {
+  margin-left: 10px;
+}
+
+.job-title {
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.star-icon {
+  color: #dda046;
+  font-size: 15px;
+}
+
+.icons-details {
+  font-family: 'Roboto';
+  font-size: 13px;
+  color: #ffffff;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.location-jobtype-salary-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.location-job-type-container {
+  display: flex;
+  align-items: center;
+}
+
+.icons {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.package {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.description-heading {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.description {
+  font-family: 'Roboto';
+  font-size: 13px;
+  color: #ffffff;
+  margin: 0px;
+  line-height: 1.5;
+}
+
+.link-ele {
+  text-decoration: none;
+}

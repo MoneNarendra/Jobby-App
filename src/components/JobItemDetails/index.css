@@ -1,0 +1,143 @@
+.jobs-details-container {
+  min-height: 100vh;
+  background-color: #000000;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.job-details-inner-container {
+  width: 90%;
+  max-width: 1110px;
+}
+
+.skills-container {
+  list-style-type: none;
+  padding-left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+}
+.skills-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  width: 50%;
+}
+@media (min-width: 768px) {
+  .skills-item {
+    width: 33%;
+    margin-bottom: 25px;
+  }
+}
+
+.skill-img {
+  height: 40px;
+}
+
+.skill-name {
+  font-family: 'Roboto';
+  font-size: 13px;
+  color: #ffffff;
+  margin-left: 5px;
+}
+
+.discription-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.link-container {
+  display: flex;
+  align-items: center;
+}
+
+.visit-heading {
+  color: #6366f1;
+}
+
+.link-icon {
+  font-size: 20px;
+  margin-left: 8px;
+  color: #6366f1;
+}
+
+.compnay-life-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.compnay-life-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .compnay-life-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .company-life-dis {
+    width: 60%;
+    align-self: flex-start;
+  }
+  .compnay-life-img {
+    width: 35%;
+  }
+}
+
+.similar-job-heading {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.similar-job-list-container {
+  list-style-type: none;
+  padding-left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.similar-job-card {
+  background-color: #272727;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .similar-job-card {
+    width: 280px;
+    margin-right: 15px;
+  }
+}
+
+.failure-loader-container {
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #000000;
+}
+
+.failed-img {
+  width: 200px;
+}
+
+@media (min-width: 768px) {
+  .failed-img {
+    width: 400px;
+  }
+}
