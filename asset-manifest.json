@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Jobby-App/static/css/main.a9149d38.chunk.css",
-    "main.js": "/Jobby-App/static/js/main.a7b01eb0.chunk.js",
-    "main.js.map": "/Jobby-App/static/js/main.a7b01eb0.chunk.js.map",
-    "runtime-main.js": "/Jobby-App/static/js/runtime-main.932bf5f9.js",
-    "runtime-main.js.map": "/Jobby-App/static/js/runtime-main.932bf5f9.js.map",
-    "static/js/2.423c1309.chunk.js": "/Jobby-App/static/js/2.423c1309.chunk.js",
-    "static/js/2.423c1309.chunk.js.map": "/Jobby-App/static/js/2.423c1309.chunk.js.map",
-    "index.html": "/Jobby-App/index.html",
-    "static/css/main.a9149d38.chunk.css.map": "/Jobby-App/static/css/main.a9149d38.chunk.css.map",
-    "static/js/2.423c1309.chunk.js.LICENSE.txt": "/Jobby-App/static/js/2.423c1309.chunk.js.LICENSE.txt"
+    "main.css": "/jobby-app/static/css/main.a9149d38.chunk.css",
+    "main.js": "/jobby-app/static/js/main.a7b01eb0.chunk.js",
+    "main.js.map": "/jobby-app/static/js/main.a7b01eb0.chunk.js.map",
+    "runtime-main.js": "/jobby-app/static/js/runtime-main.4bc4e750.js",
+    "runtime-main.js.map": "/jobby-app/static/js/runtime-main.4bc4e750.js.map",
+    "static/js/2.423c1309.chunk.js": "/jobby-app/static/js/2.423c1309.chunk.js",
+    "static/js/2.423c1309.chunk.js.map": "/jobby-app/static/js/2.423c1309.chunk.js.map",
+    "index.html": "/jobby-app/index.html",
+    "static/css/main.a9149d38.chunk.css.map": "/jobby-app/static/css/main.a9149d38.chunk.css.map",
+    "static/js/2.423c1309.chunk.js.LICENSE.txt": "/jobby-app/static/js/2.423c1309.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.932bf5f9.js",
+    "static/js/runtime-main.4bc4e750.js",
     "static/js/2.423c1309.chunk.js",
     "static/css/main.a9149d38.chunk.css",
     "static/js/main.a7b01eb0.chunk.js"
