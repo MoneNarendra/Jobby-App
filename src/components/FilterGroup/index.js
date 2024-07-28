@@ -76,7 +76,7 @@ export const SalaryFilter = props => {
 }
 
 export const SearchSmFilter = props => {
-  const {onChangeUserSearch, getSearch, searchContainerType} = props
+  const {onChangeUserSearch, getSearch} = props
 
   const userSearch = event => {
     onChangeUserSearch(event.target.value)
@@ -92,11 +92,47 @@ export const SearchSmFilter = props => {
     getSearch()
   }
 
-  const searchConClass =
-    searchContainerType === 'SMALL' ? 'small-search-con' : 'large-search-con'
+  return (
+    <div className="search-sm-container">
+      <input
+        type="search"
+        className="search-input-sm"
+        placeholder="Search"
+        onChange={userSearch}
+        onKeyDown={onEnterPressed}
+        data-testid="searchButton"
+      />
+      <button
+        className="search-button-sm"
+        type="button"
+        onClick={userPressSearchBtn}
+        data-testid="searchButton"
+      >
+        <IoIosSearch label="serch" className="seach-icon-sm" />
+      </button>
+    </div>
+  )
+}
+
+export const SearchLgFilter = props => {
+  const {onChangeUserSearch, getSearch} = props
+
+  const userSearch = event => {
+    onChangeUserSearch(event.target.value)
+  }
+
+  const onEnterPressed = event => {
+    if (event.key === 'Enter') {
+      getSearch()
+    }
+  }
+
+  const userPressSearchBtn = () => {
+    getSearch()
+  }
 
   return (
-    <div className={`search-sm-container ${searchConClass}`}>
+    <div className="search-lg-container">
       <input
         type="search"
         className="search-input-sm"

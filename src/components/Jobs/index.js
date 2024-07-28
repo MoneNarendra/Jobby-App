@@ -5,7 +5,12 @@ import Loader from 'react-loader-spinner'
 import Header from '../Header'
 import JobCard from '../JobCard'
 import ProfileCard from '../ProfileCard'
-import {EmplymentTypeFilter, SalaryFilter, SearchSmFilter} from '../FilterGroup'
+import {
+  EmplymentTypeFilter,
+  SalaryFilter,
+  SearchSmFilter,
+  SearchLgFilter,
+} from '../FilterGroup'
 
 import './index.css'
 
@@ -70,8 +75,10 @@ class Jobs extends Component {
   getJobs = async () => {
     this.setState({allJobsStatus: constStatus.loading})
     const {search, employments, salaryAmt} = this.state
-    const emplymentType = employments.join(',')
-    const jobUrl = `https://apis.ccbp.in/jobs?employment_type=${emplymentType}&minimum_package=${salaryAmt}&search=${search}`
+
+    const jobUrl = `https://apis.ccbp.in/jobs?employment_type=${employments.join(
+      ',',
+    )}&minimum_package=${salaryAmt}&search=${search}`
     const jwtToken = Cookies.get('jwt_token')
     const options = {
       headers: {
@@ -210,7 +217,6 @@ class Jobs extends Component {
             <SearchSmFilter
               onChangeUserSearch={this.onChangeUserSearch}
               getSearch={this.getSearch}
-              searchContainerType="SMALL"
             />
             <div className="left-section-lg-container">
               <ProfileCard />
@@ -224,10 +230,9 @@ class Jobs extends Component {
               />
             </div>
             <div className="right-section-lg-container">
-              <SearchSmFilter
+              <SearchLgFilter
                 onChangeUserSearch={this.onChangeUserSearch}
                 getSearch={this.getSearch}
-                searchContainerType="LARGE"
               />
               {this.renderResponse()}
             </div>
@@ -239,62 +244,3 @@ class Jobs extends Component {
 }
 
 export default Jobs
-
-// typeOfEmplymentSection = () => (
-//   <div className="left-eachsection-container">
-//     <div className="selection-type-container">
-//       <h1 className="type-heading">Type of Employment</h1>
-//       <ul className="list-container">
-//         {employmentTypesList.map(eachType => {
-//           const onClickEmpTyp = () =>
-//             this.selctedEmployement(eachType.employmentTypeId)
-//           return (
-//             <li
-//               className="checkbox-container"
-//               key={eachType.employmentTypeId}
-//             >
-//               <input
-//                 type="checkbox"
-//                 id={eachType.employmentTypeId}
-//                 onClick={onClickEmpTyp}
-//               />
-//               <label
-//                 className="label-ele"
-//                 htmlFor={eachType.employmentTypeId}
-//               >
-//                 {eachType.label}
-//               </label>
-//             </li>
-//           )
-//         })}
-//       </ul>
-//     </div>
-//   </div>
-// )
-
-//  typeOfSalarySection = () => (
-//     <div className="left-eachsection-container">
-//       <div className="selection-type-container">
-//         <h1 className="type-heading">Salary Range</h1>
-//         <ul className="list-container">
-//           {salaryRangesList.map(eachType => {
-//             const onClickSalary = () =>
-//               this.selectSalaryAmount(eachType.salaryRangeId)
-//             return (
-//               <li className="radio-container" key={eachType.salaryRangeId}>
-//                 <input
-//                   type="radio"
-//                   id={eachType.salaryRangeId}
-//                   name="salary"
-//                   onClick={onClickSalary}
-//                 />
-//                 <label className="label-ele" htmlFor={eachType.salaryRangeId}>
-//                   {eachType.label}
-//                 </label>
-//               </li>
-//             )
-//           })}
-//         </ul>
-//       </div>
-//     </div>
-//   )

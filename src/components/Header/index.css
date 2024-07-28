@@ -58,6 +58,8 @@
 }
 
 .large-viewbtn-container {
+  list-style-type: none;
+  padding-left: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,6 +78,7 @@
   font-size: 18px;
   font-weight: 400;
 }
+
 @media (max-width: 767px) {
   .logout-btn-container {
     display: none;

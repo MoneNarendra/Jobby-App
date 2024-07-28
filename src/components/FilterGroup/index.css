@@ -51,23 +51,24 @@
   border-radius: 10px;
 }
 
-.large-search-con {
-  margin-top: 15px;
-}
-
 @media (min-width: 768px) {
-  .small-search-con {
+  .search-sm-container {
     display: none;
   }
 }
 
-.large-search-con {
-  display: none;
+.search-lg-container {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #64748b;
+  border-radius: 10px;
 }
 
-@media (min-widht: 768px) {
-  .large-search-con {
-    display: inline;
+@media (max-width: 767px) {
+  .search-lg-container {
+    display: none;
   }
 }
 
