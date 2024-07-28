@@ -15,7 +15,7 @@ const Header = props => {
   return (
     <nav className="nav-header">
       <div className="nav-inner-container">
-        <Link to="/Jobby-App" className="link-ele">
+        <Link to="/" className="link-ele">
           <button type="button" className="mobile-buttons">
             <img
               src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
@@ -25,7 +25,7 @@ const Header = props => {
           </button>
         </Link>
         <ul className="mobile-view-btn-container">
-          <Link to="/Jobby-App" className="link-ele">
+          <Link to="/" className="link-ele">
             <li>
               <button type="button" className="mobile-buttons">
                 <IoMdHome label="home-icon" className="mobile-icons" />
@@ -51,7 +51,7 @@ const Header = props => {
           </li>
         </ul>
         <div className="large-viewbtn-container">
-          <Link to="/Jobby-App" className="nav-text link-ele">
+          <Link to="/" className="nav-text link-ele">
             Home
           </Link>
           <Link to="/jobs" className="nav-text link-ele">

@@ -21,7 +21,7 @@ class LoginForm extends Component {
       expires: 30,
       path: '/',
     })
-    history.replace('/Jobby-App')
+    history.replace('/')
   }
 
   responseFailed = msg => {
@@ -89,7 +89,7 @@ class LoginForm extends Component {
     const {errorMsg, isRespFailed} = this.state
     const jwtToken = Cookies.get('jwt_token')
     if (jwtToken !== undefined) {
-      return <Redirect to="/Jobby-App" />
+      return <Redirect to="/" />
     }
     return (
       <div className="form-bg-container">
