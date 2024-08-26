@@ -1,4 +1,4 @@
-link: "https://monenarendra.github.io/Jobby-App"
+link: "[https://monenarendra.github.io/Jobby-App](https://jobyappnan.ccbp.tech/)"
 
 In this project, let's build a **Jobby App** by applying the concepts we have learned till now.
 
